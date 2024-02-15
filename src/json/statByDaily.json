@@ -1,0 +1,324 @@
+{
+    "meta": {
+        "code": 200,
+        "message": "OK"
+    },
+    "data": {
+        "id": "507f1f77bcf86cd799439055",
+        "userId": "507f191e810c19729de860ea",
+        "socialType": "INST",
+        "cid": "INST:17841400005463628",
+        "monthlyStat": [
+            {
+                "date": "01.01.2024",
+                "usersCount": 395403162,
+                "deltaUsersCount": 0,
+                "deltaPosts": 0,
+                "deltaInteractions": 439922,
+                "deltaLikes": 436585,
+                "deltaComments": 3337,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "02.01.2024",
+                "usersCount": 395430400,
+                "deltaUsersCount": 27238,
+                "deltaPosts": 0,
+                "deltaInteractions": 206639,
+                "deltaLikes": 205050,
+                "deltaComments": 1589,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "03.01.2024",
+                "usersCount": 395407784,
+                "deltaUsersCount": -22616,
+                "deltaPosts": 1,
+                "deltaInteractions": 1228780,
+                "deltaLikes": 1218818,
+                "deltaComments": 9962,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "04.01.2024",
+                "usersCount": 395422531,
+                "deltaUsersCount": 14747,
+                "deltaPosts": 2,
+                "deltaInteractions": 904049,
+                "deltaLikes": 896544,
+                "deltaComments": 7505,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "05.01.2024",
+                "usersCount": 395463637,
+                "deltaUsersCount": 41106,
+                "deltaPosts": 0,
+                "deltaInteractions": 427188,
+                "deltaLikes": 423958,
+                "deltaComments": 3230,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "06.01.2024",
+                "usersCount": 395504096,
+                "deltaUsersCount": 40459,
+                "deltaPosts": 3,
+                "deltaInteractions": 2497540,
+                "deltaLikes": 2482501,
+                "deltaComments": 15039,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "07.01.2024",
+                "usersCount": 395551577,
+                "deltaUsersCount": 47481,
+                "deltaPosts": 4,
+                "deltaInteractions": 2832500,
+                "deltaLikes": 2820635,
+                "deltaComments": 11865,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "08.01.2024",
+                "usersCount": 395582103,
+                "deltaUsersCount": 30526,
+                "deltaPosts": 2,
+                "deltaInteractions": 1031680,
+                "deltaLikes": 1027990,
+                "deltaComments": 3690,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "09.01.2024",
+                "usersCount": 395615843,
+                "deltaUsersCount": 33740,
+                "deltaPosts": 0,
+                "deltaInteractions": 680998,
+                "deltaLikes": 677059,
+                "deltaComments": 3939,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "10.01.2024",
+                "usersCount": 395643857,
+                "deltaUsersCount": 28014,
+                "deltaPosts": 2,
+                "deltaInteractions": 930366,
+                "deltaLikes": 926029,
+                "deltaComments": 4337,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "11.01.2024",
+                "usersCount": 395676474,
+                "deltaUsersCount": 32617,
+                "deltaPosts": 1,
+                "deltaInteractions": 1062467,
+                "deltaLikes": 1055065,
+                "deltaComments": 7402,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "12.01.2024",
+                "usersCount": 395430973,
+                "deltaUsersCount": -245501,
+                "deltaPosts": 0,
+                "deltaInteractions": 460423,
+                "deltaLikes": 457756,
+                "deltaComments": 2667,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "13.01.2024",
+                "usersCount": 395473154,
+                "deltaUsersCount": 42181,
+                "deltaPosts": 1,
+                "deltaInteractions": 293725,
+                "deltaLikes": 292051,
+                "deltaComments": 1674,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "14.01.2024",
+                "usersCount": 395804949,
+                "deltaUsersCount": 331795,
+                "deltaPosts": 0,
+                "deltaInteractions": 412729,
+                "deltaLikes": 408572,
+                "deltaComments": 4157,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "15.01.2024",
+                "usersCount": 395861547,
+                "deltaUsersCount": 56598,
+                "deltaPosts": 1,
+                "deltaInteractions": 475227,
+                "deltaLikes": 472187,
+                "deltaComments": 3040,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "16.01.2024",
+                "usersCount": 395918029,
+                "deltaUsersCount": 56482,
+                "deltaPosts": 1,
+                "deltaInteractions": 359106,
+                "deltaLikes": 356222,
+                "deltaComments": 2884,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "17.01.2024",
+                "usersCount": 395906914,
+                "deltaUsersCount": -11115,
+                "deltaPosts": 0,
+                "deltaInteractions": 319177,
+                "deltaLikes": 316454,
+                "deltaComments": 2723,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "18.01.2024",
+                "usersCount": 395984851,
+                "deltaUsersCount": 77937,
+                "deltaPosts": 0,
+                "deltaInteractions": 178462,
+                "deltaLikes": 177312,
+                "deltaComments": 1150,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "19.01.2024",
+                "usersCount": 395978938,
+                "deltaUsersCount": -5913,
+                "deltaPosts": 0,
+                "deltaInteractions": 164118,
+                "deltaLikes": 163186,
+                "deltaComments": 932,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "20.01.2024",
+                "usersCount": 396025568,
+                "deltaUsersCount": 46630,
+                "deltaPosts": 1,
+                "deltaInteractions": 177349,
+                "deltaLikes": 176260,
+                "deltaComments": 1089,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "21.01.2024",
+                "usersCount": 395994313,
+                "deltaUsersCount": -31255,
+                "deltaPosts": 1,
+                "deltaInteractions": 480328,
+                "deltaLikes": 475819,
+                "deltaComments": 4509,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "22.01.2024",
+                "usersCount": 396007354,
+                "deltaUsersCount": 13041,
+                "deltaPosts": 0,
+                "deltaInteractions": 175141,
+                "deltaLikes": 173776,
+                "deltaComments": 1365,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "23.01.2024",
+                "usersCount": 396023651,
+                "deltaUsersCount": 16297,
+                "deltaPosts": 0,
+                "deltaInteractions": 132654,
+                "deltaLikes": 131555,
+                "deltaComments": 1099,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "24.01.2024",
+                "usersCount": 396004918,
+                "deltaUsersCount": -18733,
+                "deltaPosts": 0,
+                "deltaInteractions": 105428,
+                "deltaLikes": 104639,
+                "deltaComments": 789,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "25.01.2024",
+                "usersCount": 396043575,
+                "deltaUsersCount": 38657,
+                "deltaPosts": 0,
+                "deltaInteractions": 83638,
+                "deltaLikes": 82883,
+                "deltaComments": 755,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "26.01.2024",
+                "usersCount": 396020701,
+                "deltaUsersCount": -22874,
+                "deltaPosts": 0,
+                "deltaInteractions": 51251,
+                "deltaLikes": 50605,
+                "deltaComments": 646,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "27.01.2024",
+                "usersCount": 396086874,
+                "deltaUsersCount": 66173,
+                "deltaPosts": 2,
+                "deltaInteractions": 291958,
+                "deltaLikes": 289427,
+                "deltaComments": 2531,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "28.01.2024",
+                "usersCount": 396113732,
+                "deltaUsersCount": 26858,
+                "deltaPosts": 3,
+                "deltaInteractions": 112852,
+                "deltaLikes": 111794,
+                "deltaComments": 1058,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "29.01.2024",
+                "usersCount": 396144385,
+                "deltaUsersCount": 30653,
+                "deltaPosts": 0,
+                "deltaInteractions": 275199,
+                "deltaLikes": 272769,
+                "deltaComments": 2430,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "30.01.2024",
+                "usersCount": 396186102,
+                "deltaUsersCount": 41717,
+                "deltaPosts": 1,
+                "deltaInteractions": 558775,
+                "deltaLikes": 552509,
+                "deltaComments": 6266,
+                "deltaViews": 0
+            },  
+            {   
+                "date": "31.01.2024",
+                "usersCount": 396213133,
+                "deltaUsersCount": 27031,
+                "deltaPosts": 0,
+                "deltaInteractions": 273358,
+                "deltaLikes": 271028,
+                "deltaComments": 2330,
+                "deltaViews": 0
+            }
+        ]
+    }
+}

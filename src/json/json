@@ -1,0 +1,49 @@
+
+{
+    "id": "507f191e810c19729de860ea",
+    "username": "rock689",
+    "role": "Basic",
+    "password": "hashed",
+    "email": "rock689@gmail.com",
+    "phone": "14376897777"
+}
+
+{
+    "id": "507f1f77bcf86cd799439011",
+    "userId": "507f191e810c19729de860ea",
+    "socialType": "INST",
+    "cid": "",
+    "usersCount": ,
+    "avgLikes": ,
+    "avgComments": ,
+    "avgInteractions": ,
+    "avgVideoLikes": ,
+    "avgVideoComments": ,
+    "avgVideoViews": 
+}
+
+{
+    "id": ,
+    "userId": ,
+    "socialType": "INST",
+    "cid": "",
+    "time": "",
+    "like": ,
+    "comments": ,
+    "interactions": ""
+}
+
+{
+    "id": ,
+    "userId": ,
+    "socialType": "INST",
+    "cid": "",
+    "date": "",
+    "usersCount": ,
+    "deltaUsersCount": ,
+    "deltaLikes": ,
+    "deltaComments": ,
+    "deltaInteractions": ,
+    "deltaViews": ,
+    "deltaPosts": 
+}
