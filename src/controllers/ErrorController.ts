@@ -49,7 +49,7 @@ export class ErrorController {
       })
     } else {
       // Log the error for internal tracking
-      logger.error(
+      console.log(
         JSON.stringify({
           level: 'error',
           message: 'Something went very wrong!',

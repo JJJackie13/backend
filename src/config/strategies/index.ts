@@ -2,10 +2,10 @@ import passport from 'passport'
 
 import User from '../../models/userModel'
 import localStrategy from './LocalStrategy'
-import googleStrategy from './GoogleStrategy'
+// import googleStrategy from './GoogleStrategy'
 
 passport.use(localStrategy)
-passport.use(googleStrategy)
+// passport.use(googleStrategy)
 
 passport.serializeUser((user: IUser, done) => {
   done(null, user.id)

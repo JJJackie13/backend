@@ -18,7 +18,7 @@ export const connectDatabase = (): void => {
   void mongoose.connect(dbConnectionURL())
 
   mongoose.connection
-    .on('open', () => logger.info('Connected to MongoDB.'))
-    .on('close', () => logger.warn('Disconnected from MongoDB.'))
-    .on('error', (error) => logger.error('MongoDB connection error:', error))
+    .on('open', () => console.log('Connected to MongoDB.'))
+    .on('close', () => console.log('Disconnected from MongoDB.'))
+    .on('error', (error) => console.log('MongoDB connection error:', error))
 }
