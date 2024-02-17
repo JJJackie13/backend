@@ -1,13 +1,7 @@
-import { InferSchemaType, Schema, model } from "mongoose";
-
+import { InferSchemaType, Schema, model } from 'mongoose'
 
 const weeklyActivitySchema = new Schema(
   {
-    userId: {
-      type: Schema.Types.ObjectId,
-      required: true,
-      ref: 'user',
-    },
     time: {
       type: String,
     },
@@ -23,7 +17,7 @@ const weeklyActivitySchema = new Schema(
   },
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  }
+  },
 )
 
 type WeeklyActivity = InferSchemaType<typeof weeklyActivitySchema>

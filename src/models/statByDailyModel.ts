@@ -1,41 +1,35 @@
-import { InferSchemaType, Schema, model } from "mongoose";
-
+import { InferSchemaType, Schema, model } from 'mongoose'
 
 const statByDailySchema = new Schema(
   {
-    userId: {
-      type: Schema.Types.ObjectId,
-      required: true,
-      ref: 'user',
-    },
     date: {
       type: String,
     },
     usersCount: {
       type: Number,
     },
-		deltaUsersCount: {
+    deltaUsersCount: {
       type: Number,
     },
-		deltaLikes: {
+    deltaLikes: {
       type: Number,
     },
-		deltaComments: {
+    deltaComments: {
       type: Number,
     },
-		deltaInteractions: {
+    deltaInteractions: {
       type: Number,
     },
-		deltaViews: {
+    deltaViews: {
       type: Number,
     },
-		deltaPosts: {
+    deltaPosts: {
       type: Number,
     },
   },
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-  }
+  },
 )
 
 type StatByDaily = InferSchemaType<typeof statByDailySchema>
