@@ -6,8 +6,8 @@ interface IUser {
   role?: 'Basic' | 'Advanced' | 'VIP' | 'Admin'
   password?: string
   passwordConfirm?: string
-  cid?: string[]
+  account?: AccountsType
   statId?: string[]
   weeklyActivityId?: string[]
-  statByDailyId?: string[]
+  monthlyStatId?: string[]
 }

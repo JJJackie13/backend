@@ -1,8 +1,7 @@
 import bcrypt from 'bcryptjs'
 import validator from 'validator'
-import { type InferSchemaType, Schema, model } from 'mongoose'
+import { type InferSchemaType, Schema, model, Query } from 'mongoose'
 import { socialType } from '../utils/enum'
-import Stat from './statModel'
 
 const accountsSchema = new Schema({
   type: {
@@ -54,7 +53,7 @@ const userSchema = new Schema(
     accounts: [accountsSchema],
     statId: [{ type: Schema.Types.ObjectId, ref: 'Stat' }],
     weeklyActivityId: [{ type: Schema.Types.ObjectId, ref: 'WeeklyActivity' }],
-    statByDailyId: [{ type: Schema.Types.ObjectId, ref: 'StatByDaily' }],
+    monthlyStatId: [{ type: Schema.Types.ObjectId, ref: 'MonthlyStat' }],
   },
   {
     timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
@@ -77,26 +76,27 @@ userSchema.pre('save', async function (next) {
   next()
 })
 
-userSchema.pre('find', function (next) {
+userSchema.pre<Query<IUser, IUser>>(/^find/, function (next) {
   this.populate({
     path: 'statId',
+    model: 'Stat',
   })
   next()
 })
 
-// userSchema.pre(/^find/, function(next) {
+userSchema.pre<Query<IUser, IUser>>(/^find/, function (next) {
+  this.populate({
+    path: 'weeklyActivityId',
+    model: 'WeeklyActivity',
+  })
+  next()
+})
+
+// userSchema.pre<Query<IUser, IUser>>(/^find/, function(next) {
 //   this.populate({
-//     path: 'weeklyActivityId',
+//     path: 'monthlyStatId',
+//     model: 'MonthlyStat'
 //   })
-
-//   next()
-// })
-
-// userSchema.pre(/^find/, function(next) {
-//   this.populate({
-//     path: 'statByDailyId',
-//   })
-
 //   next()
 // })
 

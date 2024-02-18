@@ -4,7 +4,7 @@ import User from '../models/userModel'
 import { controller, get, patch, post, use } from '../decorators'
 import { isAuthenticated } from '../middleware/isAuthenticated'
 import { getAll, getOne } from './handlerFactory'
-import { statAPI } from '../utils/StatisticsAPI'
+import { statAPI } from '../rapidAPI/StatisticsAPI'
 
 @controller('/api/v1/users')
 class UserController {

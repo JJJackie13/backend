@@ -2,6 +2,12 @@ import { InferSchemaType, Schema, model } from 'mongoose'
 
 const weeklyActivitySchema = new Schema(
   {
+    cid: {
+      type: String,
+    },
+    timeStatistics: {
+      type: String,
+    },
     time: {
       type: String,
     },

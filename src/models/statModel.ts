@@ -38,8 +38,20 @@ const membersGendersAgesSchema = new Schema({
 
 const statSchema = new Schema(
   {
+    cid: {
+      type: String,
+    },
     usersCount: {
       type: Number,
+    },
+    socialType: {
+      type: String,
+    },
+    name: {
+      type: String,
+    },
+    screenName: {
+      type: String,
     },
     avgLikes: {
       type: Number,
@@ -59,6 +71,10 @@ const statSchema = new Schema(
     avgVideoViews: {
       type: Number,
     },
+    timeStatistics: {
+      type: String,
+    },
+    tags: [String],
     membersCities: [membersCitiesSchema],
     membersCountries: [membersCountriesSchema],
     membersGendersAges: {

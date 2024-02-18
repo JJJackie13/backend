@@ -1,7 +1,10 @@
 import { InferSchemaType, Schema, model } from 'mongoose'
 
-const statByDailySchema = new Schema(
+const monthlyStatSchema = new Schema(
   {
+    cid: {
+      type: String,
+    },
     date: {
       type: String,
     },
@@ -32,6 +35,6 @@ const statByDailySchema = new Schema(
   },
 )
 
-type StatByDaily = InferSchemaType<typeof statByDailySchema>
+type MonthlyStat = InferSchemaType<typeof monthlyStatSchema>
 
-export default model<StatByDaily>('StatByDaily', statByDailySchema)
+export default model<MonthlyStat>('MonthlyStat', monthlyStatSchema)
