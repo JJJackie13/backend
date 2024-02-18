@@ -1,5 +1,5 @@
 export * from './RootController'
 export * from './AuthController'
 export * from './UserController'
-// export * from './StatController'
+export * from './StatController'
 export * from './ErrorController'
