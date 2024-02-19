@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express'
-import { controller, get, post, use } from '../decorators'
+import { controller, del, get, post, use } from '../decorators'
 import { isAuthenticated } from '../middleware/isAuthenticated'
 import { getAll, getOne } from './handlerFactory'
 import Stat from '../models/statModel'
@@ -25,4 +25,12 @@ class StatController {
   ): Promise<void> {
     weeklyActivityAPI(req, res)
   }
+
+  @del('/:id')
+  @use(isAuthenticated)
+  async deleteSocialMedia(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ): Promise<void> {}
 }

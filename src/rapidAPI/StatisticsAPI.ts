@@ -6,17 +6,18 @@ import User from '../models/userModel'
 import { AccountsType } from '../types/accountType'
 import Stat from '../models/statModel'
 import WeeklyActivity from '../models/weeklyActivityModel'
+import getPreviousMonthDates from '../utils/prevMonthDate'
+import statFilterUniqueObjectsByKey, {
+  weeklyDataFilterUniqueObjectsByKey,
+} from '../utils/filterUniqueObjectsByKey'
 
 export const statAPI = async (req: Request, res: Response) => {
   const socialMediaAccounts = req.body.accounts
   const { id } = req.params
-  console.log(id)
-  console.log('Social Media Accounts', socialMediaAccounts)
 
-  socialMediaAccounts.map(
-    async (obj: AccountsType) => {
+  const results = await Promise.all(
+    socialMediaAccounts.map(async (obj: AccountsType) => {
       const link = socialMediaLink(obj.type)
-      console.log('Social Media Link', link)
 
       const options = {
         method: 'GET',
@@ -32,7 +33,7 @@ export const statAPI = async (req: Request, res: Response) => {
 
       try {
         const data = (await axios.request(options)).data.data
-        console.log('data data: ', data)
+        // console.log('data data: ', data)
 
         const statUpdate = await Stat.create({
           cid: data.cid,
@@ -55,7 +56,7 @@ export const statAPI = async (req: Request, res: Response) => {
           },
         })
 
-        console.log('statUpdate: ', statUpdate)
+        // console.log('statUpdate: ', statUpdate)
 
         const userUpdate = await User.findByIdAndUpdate(
           id,
@@ -71,15 +72,28 @@ export const statAPI = async (req: Request, res: Response) => {
           },
           { new: true },
         )
-        console.log('userUpdate: ', userUpdate)
+        // console.log('userUpdate: ', userUpdate)
+
+        return userUpdate
       } catch (error) {
         console.error('ERROR IN STAT', error)
       }
-    },
-    res.status(200).json({
-      data: 'HEEY',
     }),
   )
+
+  console.log('results: ', results)
+
+  const updatedUsers = results.filter((result) => result && !result.error)
+
+  console.log('updatedUsers: ', updatedUsers)
+
+  const userResult = statFilterUniqueObjectsByKey(updatedUsers, '_id')
+
+  console.log('userResult: ', userResult)
+
+  res.status(200).json({
+    data: userResult,
+  })
 }
 
 export const weeklyActivityAPI = async (req: Request, res: Response) => {
@@ -150,15 +164,17 @@ export const monthlyStatAPI = async (req: Request, res: Response) => {
 
   const user = await User.findById(id)
 
+  const previousMonthDates = getPreviousMonthDates()
+
   user?.accounts.map(
-    async () => {
+    async (account) => {
       const options = {
         method: 'GET',
         url: 'https://instagram-statistics-api.p.rapidapi.com/statistics/retrospective',
         params: {
-          cid: req.body.cid,
-          from: req.body.from,
-          to: req.body.to,
+          cid: account.cid,
+          from: previousMonthDates.firstDay,
+          to: previousMonthDates.lastDay,
         },
         headers: {
           'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,

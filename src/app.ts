@@ -24,9 +24,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      maxAge: 3600000 * 24, // 1 hour * 24 = 24 hours
+      maxAge: 3600000 * 72, // 1 hour * 72 =  72hours
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      // secure: process.env.NODE_ENV === 'production',
     },
     store: MongoStore.create({
       mongoUrl: dbConnectionURL(),
