@@ -42,7 +42,7 @@ app.use('/api/v1', authRoutes)
 const whitelist: string[] = [
   'http://localhost:8000',
   'http://localhost:5173',
-  'https://todoapplicationtypescript.netlify.app', // need to add whitelist
+  'https://marketing-analitical-platform.onrender.com', // need to add whitelist
 ]
 
 const corsOptions: CorsOptions = {
